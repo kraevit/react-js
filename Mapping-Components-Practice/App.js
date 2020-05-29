@@ -20,9 +20,10 @@ function App() {
     />
   */
 
-    // pass props as single obj !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-    <Prodcut key={item.id} product={item} />
-
+    const productComponents = productsData.map(item => {
+      // pass props as single obj !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+      <Prodcut key={item.id} product={item} />
+    });
   );
 
   return (
