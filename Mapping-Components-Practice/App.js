@@ -21,7 +21,7 @@ function App() {
   */
 
     // pass props as single obj !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-    <Prodcut key{item.id} product={item} />
+    <Prodcut key={item.id} product={item} />
 
   );
 
