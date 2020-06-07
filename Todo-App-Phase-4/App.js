@@ -12,7 +12,7 @@ Challange: Change the <App /> component into a statefull class component and loa
 
 import React, { Component } from "react";
 
-import TodoItem from "./TodoItem";
+import TodoItem from "./TodoItem"; 
 import todosData from "./todosData";
 
 // function App() {
@@ -44,7 +44,8 @@ class App extends Component {
   }
 
   render() {
-    const todoItems = this.state.todos.map(item => <TodoItem key={item.id} item={item} />);
+    const todoItems = 
+      this.state.todos.map(item => <TodoItem key={item.id} item={item} />);
     return (
       <div className="todo-list">
         {todoItems}
@@ -52,6 +53,5 @@ class App extends Component {
     );
   }
 }
-
 
 export default App;
