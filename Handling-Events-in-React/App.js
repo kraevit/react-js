@@ -1,21 +1,22 @@
-import React, { Component } from "react";
+import React from "react";
 
-// class App extends Component {
-//   constructor() {
-//     super();
-//     this.state = {};
-//   }
-//   render() {
-//     return (
-//       <div></div>
-//     );
-//   }
-// }
+function handleClick() {
+  console.log("CLICKED!");
+}
 
 function App() {
   return (
-    <div></div>
+    <div>
+      <img src="https://www.fillmurray.com/200/100" />
+      <br />
+      <br />
+      <button onClick={handleClick}>Click me</button>
+    </div>
   );
 }
+
+// <button onClick={() => console.log("clicked")}>Click me</button>
+// <button onClick="myFunction()">Click me</button>  
+// <button onMouseOver="myFunction()">Click me</button>  
 
 export default App;
