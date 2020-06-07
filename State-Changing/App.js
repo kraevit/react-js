@@ -33,7 +33,10 @@ class App extends Component {
     // IF YOU WANT TO KNOW THE PREVIOUS STATE USE THIS INSTEAD
     this.setState((prevState) => {
       return {
-        count: prevState.count + 1 // do not use ++
+        // count: prevState.count++ ///// DO NOT DO THIS DON"T MODIFY STATE DIRECTLY
+
+        // USE THIS INSTEAD
+        count: prevState.count + 1
       }
     });
   }
