@@ -28,7 +28,7 @@ class App extends Component {
 
     // Anytime you use a method wich uses setState() you must BIND IT FIRST inside constructor()!
 
-    // this.setState({count: 1});  use litttterall object(this.setState({OBJ})) if you dont care what was the values of the previous state
+    // this.setState({count: 1});  use litttterall object(this.setState({OBJ})) if you dont care what were the values of the previous state
 
     // IF YOU WANT TO KNOW THE PREVIOUS STATE USE THIS INSTEAD
     this.setState((prevState) => {
@@ -40,7 +40,6 @@ class App extends Component {
       }
     });
   }
-
 
   render() {
     // JSX code here
