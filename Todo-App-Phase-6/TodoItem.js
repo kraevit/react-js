@@ -7,7 +7,7 @@ function TodoItem(props) {
       <input 
         type="checkbox" 
         onChange={() => props.handleChange(props.item.id)} 
-        omMOuseover={props.handleMouseOver}
+        onMouseover={() => props.handleMouseOver}
       />
       <p>{ props.item.text }</p>
     </div>

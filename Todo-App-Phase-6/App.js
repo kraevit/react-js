@@ -36,7 +36,7 @@ class App extends React.Component {
     // 1.
     // console.log("Changed", id);
 
-    this.setState((prevState) => {
+    this.setState(prevState => {
       const updatedTodos = prevState.todos.map(todo => {
         if (todo.id === id) {
           todo.completed = !todo.completed; // flip here
@@ -51,10 +51,10 @@ class App extends React.Component {
 
   render() {
     // 2. Pass the method down to the TodoItem component
-    const todoItem = this.state.todos.map((item) => <TodoItem key={item.id} item={item} handleChange={this.handleChange} />);
+    const todoItem = this.state.todos.map(item => <TodoItem key={ item.id } item={ item } handleChange={this.handleChange} />);
     return (
       <div className="todo-list">
-        {todoItem}
+        { todoItem }
       </div>
     );
   }
