@@ -63,7 +63,7 @@ class App extends Component {
   handleClick() {
     this.setState(prevState => {
       return {
-        isLoggedIn: !prevState.isLoggedIn,
+        isLoggedIn: !prevState.isLoggedIn
       }
     });
   }
