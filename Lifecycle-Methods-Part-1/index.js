@@ -1,4 +1,5 @@
 // Lifecycle Methods Part 1
+
 import React from "react";
 import ReactDOM from "react-dom";
 
