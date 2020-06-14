@@ -9,7 +9,7 @@ import ReactDOM from "react-dom";
 
 import App from "./App";
 
-reactDOM.render(
+ReactDOM.render(
   <App />,
   document.getElementById("root")
 );
